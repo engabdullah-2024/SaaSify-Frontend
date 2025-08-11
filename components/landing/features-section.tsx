@@ -85,7 +85,7 @@ export default function FeaturesSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
           >
-            Powerful features designed to help you grow, automate, and succeed in today's competitive market.
+            Powerful features designed to help you grow, automate, and succeed in today&apos;s competitive market.
           </motion.p>
         </motion.div>
 
@@ -96,7 +96,7 @@ export default function FeaturesSection() {
           animate={isInView ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {features.map((feature, index) => {
+          {features.map((feature) => {
             const Icon = getIcon(feature.icon);
             return (
               <motion.div

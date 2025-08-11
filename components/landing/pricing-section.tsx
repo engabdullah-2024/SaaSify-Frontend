@@ -71,7 +71,7 @@ export default function PricingSection() {
           animate={isInView ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
         >
-          {pricingPlans.map((plan, index) => (
+          {pricingPlans.map((plan) => (
             <motion.div
               key={plan.id}
               variants={cardVariants}
