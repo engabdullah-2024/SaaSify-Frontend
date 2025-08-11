@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { useRef } from 'react';
 import { features } from '@/data/mock-data';
 import { 
@@ -36,26 +37,26 @@ export default function FeaturesSection() {
     }
   };
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: [0.16, 1, 0.3, 1],
+      },
+    },
   };
 
   return (
@@ -104,7 +105,7 @@ export default function FeaturesSection() {
                 variants={itemVariants}
                 whileHover={{ 
                   y: -8,
-                  transition: { duration: 0.3 }
+                  transition: { duration: 0.3 },
                 }}
                 className="group relative p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300"
               >
