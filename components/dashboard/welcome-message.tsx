@@ -51,7 +51,7 @@ export default function WelcomeMessage() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-gray-600 dark:text-gray-300"
           >
-            Here's what's happening with your business today. Your dashboard is looking great!
+            Here&apos;s what&apos;s happening with your business today. Your dashboard is looking great!
           </motion.p>
         </div>
       </div>
